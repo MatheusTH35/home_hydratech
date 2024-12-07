@@ -1,0 +1,7 @@
+{
+  "name": "hydratechApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
