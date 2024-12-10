@@ -1,27 +1,92 @@
-#container {
+/* Fundo da página */
+ion-content {
+  --background: #BED6DA;
+}
+
+/* Botões */
+ion-button {
+  --background: #3485C4 !important;
+  --color: #ffffff;
+  --border-radius: 8px;
+}
+
+ion-button:hover {
+  filter: brightness(0.9);
+}
+
+/* Centralizar o título Hydratech */
+.center-title {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
   font-size: 20px;
-  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-#container p {
+/* Cartões */
+ion-card {
+  background-color: #E0F8DD;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ion-card-header {
+  background-color: transparent;
+}
+
+ion-card-content {
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  color: #000;
 }
 
-#container a {
-  text-decoration: none;
+/* Centralizar título Configuração e adicionar ícone */
+.config-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #000;
+  gap: 8px;
+}
+
+.config-title ion-icon {
+  font-size: 20px;
+  color: #3485C4;
+}
+
+/* Sensor Data */
+.sensor-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sensor-data ion-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #3485C4;
+}
+
+/* Config Item */
+.config-item strong {
+  color: #3485C4;
+}
+
+.config-item ul {
+  padding-left: 20px;
+  color: #000;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .sensor-data {
+    font-size: 14px;
+  }
+
+  .config-title {
+    font-size: 16px;
+  }
+
+  ion-button {
+    font-size: 12px;
+  }
 }

@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'filter-modal',
+    loadChildren: () => import('./filter-modal/filter-modal.module').then( m => m.FilterModalPageModule)
+  },
 ];
 
 @NgModule({
